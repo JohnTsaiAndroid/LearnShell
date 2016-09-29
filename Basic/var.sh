@@ -10,6 +10,12 @@ xiaoming_name="xiaoming"
 echo ${xiaoming_name}
 echo $xiaoming_name
 
+#最好给所有变量加上花括号，以便解释器识别变量的边界
+for language in Java JavaScript Python Ruby Shell;
+do
+	echo "I am good at ${language} programming!"
+done
+
 #变量的重新赋值
 xiaoming_name="lixiaoming"
 echo $xiaoming_name
