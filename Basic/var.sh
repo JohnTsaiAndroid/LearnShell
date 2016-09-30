@@ -1,5 +1,15 @@
 #!/bin/bash
 
+#有两种变量
+#1.系统变量(输出系统变量:set,env,printenv)
+echo "------------\n系统变量(执行set命令)\n----------"
+set
+echo "------------\n执行env命令-------------------\n"
+env
+echo "-------------\n执行printenv命令-------------\n"
+printenv
+#2.用户定义的变量
+
 #变量名和等号之间不能有空格
 xiaoming_name="xiaoming"
 
@@ -30,3 +40,10 @@ echo $xiaoming_age
 #删除变量
 unset xiaoming_age
 echo $xiaoming_age
+
+
+# 除了echo可以打印字符串之外
+# printf 也可以打印
+
+xiaoming_age=18
+printf "小明的年龄是 %d " $xiaoming_age
